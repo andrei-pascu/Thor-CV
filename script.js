@@ -54,25 +54,22 @@ window.onload = function () {
   sT(nameRight, 'translateX(-27px)');
   sT(job1,      'translateX(0)');
   sT(job3,      'translateX(14px)');
-  edu1.style.transform      = 'rotateX(0)';
-  edu2.style.transform      = 'translateY(-21px) rotateX(0)';
-  edu3.style.transform      = 'translateY(-42px) rotateX(0)';
+  sT(edu1,      'rotateX(0)');
+  sT(edu2,      'translateY(-21px) rotateX(0)');
+  sT(edu3,      'translateY(-42px) rotateX(0)');
   setTimeout(function() {
     edu2.style.transition   = 'linear 0.5s';
     edu3.style.transition   = 'linear 0.5s';
-    edu2.style.transform    = 'translateY(0px) rotateX(0)';
-    edu3.style.transform    = 'translateY(0px) rotateX(0)';
+    sT(edu2,    'translateY(0px) rotateX(0)');
+    sT(edu3,    'translateY(0px) rotateX(0)');
   }, 3700 );
-  windMill.style.transform  = 'translateX(0) rotate(0)';
-  info1.style.transform     = 'rotateX(0) rotate(-45deg) translate(-1px, -1px)';
-  info2.style.transform     = 'rotateY(0) rotate(-45deg) translate(141px, -1px)';
-  triangle1.style.transform = 'rotate(-18.5deg)';
-  triangle2.style.transform = 'rotate(-71.8deg)';
-  triangle3.style.transform = 'rotate(-125.1deg)';
-  triangle4.style.transform = 'rotate(-161.7deg)';
-
-
-
+  sT(windMill,  'translateX(0) rotate(0)');
+  sT(info1,     'rotateX(0) rotate(-45deg) translate(-1px, -1px)');
+  sT(info2,     'rotateY(0) rotate(-45deg) translate(141px, -1px)');
+  sT(triangle1, 'rotate(-18.5deg)');
+  sT(triangle2, 'rotate(-71.8deg)');
+  sT(triangle3, 'rotate(-125.1deg)');
+  sT(triangle4, 'rotate(-161.7deg)');
   for ( let i = 0; i < icons.length; i++) {
     icons[i].style.opacity = '1';
   }
