@@ -532,11 +532,14 @@ h2 {
   transform: rotate(23deg);
 }
 @media (pointer:coarse) {
-  #c-4-left-container-content,
   #c-4-right-3-third-info1,
   #c-4-right-3-third-info2,
   #year-r-2,
   .align-links  {
     font-size: 12px;
+  }
+
+  #c-4-left-container-content {
+    font-size: 10px;
   }
 }
