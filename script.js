@@ -1,6 +1,4 @@
-function animation() {
-  document.body.removeEventListener('mouseover', animation, false);
-  document.body.removeEventListener('ontouchmove', animation, false);
+window.onload = function () {
   var face      = document.getElementById('c-1-face');
   var nameLeft  = document.getElementById('c-1-name1');
   var nameRight = document.getElementById('c-1-name2');
@@ -70,5 +68,3 @@ function animation() {
     icons[i].style.opacity = '1';
   }
 };
-document.body.addEventListener('mouseover', animation, false);
-document.body.addEventListener('ontouchmove', animation, false);
