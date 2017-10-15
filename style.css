@@ -535,8 +535,10 @@ h2 {
   #c-4-left-container3 p,
   #c-4-right-3-third-info1,
   #c-4-right-3-third-info2,
-  #year-r-2,
   .align-links  {
     font-size: 14px;
+  }
+  #year-r-2 {
+    font-size: 12px;
   }
 }
